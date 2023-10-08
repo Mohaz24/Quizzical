@@ -17,7 +17,7 @@ export default function QuizLayout() {
           <h1 className="quiz-page-title">Welcome to Quizzical! </h1>
           <Link to="/" className="return-home-link">
             {" "}
-            &larr; Back to hompage
+            &larr; back to hompage
           </Link>
           <div>
             <Main />

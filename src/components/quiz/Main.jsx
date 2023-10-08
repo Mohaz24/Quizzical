@@ -4,6 +4,10 @@ import { BsMusicNote } from 'react-icons/bs';
 import { CgNotes } from 'react-icons/cg';
 import { IoShareSocialOutline } from 'react-icons/io5';
 import { MdOutlineSportsSoccer } from 'react-icons/md';
+import general from '../../assets/general.png'
+import music from '../../assets/music.png'
+import entertainment from '../../assets/entertainment.png'
+import sports from '../../assets/sports.png'
 
 
 export default function Main() {
@@ -16,7 +20,8 @@ export default function Main() {
           <h2> General Knowledge <CgNotes className="icons" /></h2>
           <div className="card-top">
             <img
-              src="https://tronixinfo.com/wp-content/uploads/2022/11/pngwing.com_-1024x892.png"
+              src={general}
+              alt="general knowlege"
               width="250px" />
           </div>
           <div className="card-bottom">
@@ -31,7 +36,8 @@ export default function Main() {
           <h2> Music <BsMusicNote className="icons" /></h2>
           <div className="card-top">
             <img
-              src="https://www.theasknetwork.com/wp-content/uploads/2020/03/contact-us-1.png"
+              src={music}
+              alt="music"
               width="295px" />
           </div>
           <div className="card-bottom">
@@ -47,7 +53,8 @@ export default function Main() {
           <h2> Entertainments  <IoShareSocialOutline className="icons" /></h2>
           <div className="card-top">
             <img
-              src="https://d37y9b4kfek2hl.cloudfront.net/services/ui-ux-design-services.png"
+              src={entertainment}
+              alt="entertainment"
               width="280px" />
           </div>
           <div className="card-bottom">
@@ -63,7 +70,8 @@ export default function Main() {
           <h2> Sports <MdOutlineSportsSoccer className="icons" /> </h2>
           <div className="card-top">
             <img
-              src="https://cdn.dribbble.com/userupload/5776988/file/original-ebfb65b65da27759fcce8aacb643ae7e.jpeg?resize=400x0"
+              src={sports}
+              alt="sports"
               width="250px" />
           </div>
           <div className="card-bottom">
