@@ -80,11 +80,11 @@ export default function Sport() {
   }
 
   function playAgain() {
+    setloadbtn(false);
     setQuiz([]);
     handleClick();
     setisTrue(false);
   }
-
   function handleChange(event) {
     const { name, value } = event.target;
     if (value) {
@@ -170,7 +170,7 @@ export default function Sport() {
       {loadbtn ? (
         <div className="quiz-answers-scores">
           {isTrue && (
-            <p className="ct-score">You scored {score}/5 correct answers</p>
+            <p className="ct-score">You scored {score}/10 correct answers</p>
           )}
           <button onClick={isTrue ? playAgain : checkAnswer}>
             {isTrue ? "Play again" : "Check Answer"}
@@ -184,5 +184,3 @@ export default function Sport() {
     </div>
   );
 }
-
-

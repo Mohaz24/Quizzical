@@ -80,6 +80,7 @@ export default function Music() {
   }
 
   function playAgain() {
+    setloadbtn(false);
     setQuiz([]);
     handleClick();
     setisTrue(false);
@@ -170,7 +171,7 @@ export default function Music() {
       {loadbtn ? (
         <div className="quiz-answers-scores">
           {isTrue && (
-            <p className="ct-score">You scored {score}/5 correct answers</p>
+            <p className="ct-score">You scored {score}/10 correct answers</p>
           )}
           <button onClick={isTrue ? playAgain : checkAnswer}>
             {isTrue ? "Play again" : "Check Answer"}
@@ -184,6 +185,3 @@ export default function Music() {
     </div>
   );
 }
-
-
-

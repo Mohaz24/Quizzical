@@ -82,9 +82,11 @@ export default function General() {
   }
 
   function playAgain() {
+    setloadbtn(false)
     setQuiz([]);
     handleClick();
     setisTrue(false);
+   
   }
 
   function handleChange(event) {

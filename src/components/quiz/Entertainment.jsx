@@ -80,6 +80,7 @@ export default function Entertainment() {
   }
 
   function playAgain() {
+    setloadbtn(false)
     setQuiz([]);
     handleClick();
     setisTrue(false);
